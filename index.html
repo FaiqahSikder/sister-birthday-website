@@ -1,0 +1,47 @@
+<!doctype html>
+<!--language-->
+<html lang="en">
+  <head>
+    <!--allows emojis and symbols-->
+    <meta charset="UTF-8" />
+    <!--view correctly on phones-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--links css-->
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Happy Birthday</title>
+  </head>
+<!--what user sees-->
+<!-- App container -->
+ <div class="app">
+  <h1>Happy Birthday!</h1>
+  <p>Click the cake for a surprise!</p>
+
+  <!-- playground box -->
+  <div class="playground" id="playground">
+  <button class="cake-btn" id="cakeBtn">
+    <img src="assets/cake.png" alt="birthday cake" class="cake">
+  </button>
+
+  <!-- dialogue box (hidden until you win) -->
+  <div class="reveal hidden" id="reveal">
+    <div class="dialogue-box">HAPPY BIRTHDAY!!💜</div>
+
+    <div class="dialogue-body">
+      <div class="chars">
+        <img src="assets/gojo.png" alt="Gojo" class="pix">
+        <img src="assets/geto.png" alt="Geto" class="pix">
+      </div>
+
+      <div class="dialogue-text">from gojo and geto✨</div>
+    </div>
+  </div>
+</div>
+    </button>
+  </div>
+</div>
+</div>
+<div class="confetti" id="confetti"></div>
+<script src="script.js"></script>
+</body>
+</html>

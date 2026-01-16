@@ -1,0 +1,149 @@
+/* page background colours*/
+body {
+  margin: 0; 
+  background-color: #ebe1f5;
+  color: #684c68;            /* text */
+  font-family: 'Pixelify Sans', sans-serif;
+  /*center everything*/
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+  height: 100vh;
+
+  /* App window */
+.app {
+  background-color: #ffffff;
+  padding: 32px; /*space inside card so text does not touch edges*/
+  border-radius: 16px;
+  width: 420px;
+  text-align: center;
+
+  /* soft shadow for app */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+/*spacing for the pixel text*/
+h1 {
+  letter-spacing: 2px;
+}
+p {
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.cake {
+  width: 350px;              /* change later if want bigger */
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  display: block;
+}
+
+.cake-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  line-height: 0;
+transition: left 0.12s linear, top 0.12s linear;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) translateY(20px);
+}
+
+.playground {
+  height: 260px;
+  margin-top: 16px;
+  position: relative;
+  background-color: rgba(155, 108, 255, 0.1);
+  border: 2px dashed rgba(155, 108, 255, 0.4);
+  border-radius: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.message {
+  font-size: 20px;
+  color: #6a38ff;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.chars {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.pix {
+  width: 96px;
+  image-rendering: pixelated;
+}
+
+.confetti {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.confetti i {
+  position: absolute;
+  top: -20px;
+  width: 10px;
+  height: 14px;
+  border-radius: 4px;
+  opacity: 0.95;
+  animation: fall 1.2s linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(420deg);
+    opacity: 0.95;
+  }
+}
+/* dialogue box that appears inside the playground */
+.reveal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 85%;
+  max-width: 360px;
+
+  background: rgba(255, 255, 255, 0.85);
+  border: 2px solid rgba(155, 108, 255, 0.5);
+  border-radius: 14px;
+  padding: 14px;
+
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+.dialogue-title {
+  font-size: 18px;
+  color: #6a38ff;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.dialogue-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.dialogue-text {
+  font-size: 14px;
+  color: #4a3a5a;
+  letter-spacing: 1px;
+}
+
+
+
+}
